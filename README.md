@@ -1,14 +1,9 @@
-<h1 align="center">Hey there Peeps 👋, Im Shashika Jayawardena</h1>
-<h3 align="center">Discord Server Designer & Programmer.</h3>
-
-- 🌱 I’m currently learning `Software Engineering`.
-- 💬 Ask me whatsapp/call - `+94778629191`
-- 📫 How to reach me - [LinkedIn](https://www.linkedin.com/in/shashikajay/),  [Facebook](fb.com/shashika.jayzzz), [Fiverr](https://www.fiverr.com/shashikajay?public_mode=true), [DISCORD](https://discord.gg/v6Y2HG2Ut6), [Twitter](https://twitter.com/Shashikajay),  **EMAIL** - `shashikajayawardena2001@gmail.com`
-- 😄 Pronouns: Shashi
+<h1 align="center">Hey there Peeps 👋, I'm Pamudu Mihiranga</h1>
+<h3 align="center">Software Engineer & Programmer.</h3>
 
 ## Github Activity ✔:
 
-<a href="https://github.com/shashikajay">
+<a href="https://github.com/PamuduM">
   <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shashikajay&theme=tokyonight" />
   </a>
 <br/>
