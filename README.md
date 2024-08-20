@@ -1,22 +1,3 @@
-<div align="center">
-  <img height="150" src="https://e0.pxfuel.com/wallpapers/4/481/desktop-wallpaper-web-developer-software-developer.jpg"  />
-</div>
-
-###
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/pamudu-mihiranga-60b727265/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="linkedin logo"  />
-  </a>
-</div>
-
-###
-
-<div align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=ruchakaravisara.ruchakaravisara&"  />
-</div>
-
-###
 
 <h1 align="center">Hey there ,I'm Pamudu Mihiranga👋</h1>
 
