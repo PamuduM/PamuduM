@@ -1,7 +1,5 @@
 <h1 align="center">
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hello+There...;I'm+Pamudu+Mihranga;+Full+Stack+Developer;"/><br>
-    <img src="https://komarev.com/ghpvc/?username=PamuduM&label=Profile%20views&color=0e75b6&style=flat" alt="PamuduM"/>
-    <a href="https://https://github.com/PamuduM/" target="_blank">
     <img align="center" src="https://img.shields.io/badge/Portfolio-ebe8e5.svg?style=for-the-badge&logo=&logoColor=white" alt="Portfolio" />
   </a>
 </h1>
