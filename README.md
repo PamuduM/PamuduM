@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 public class AboutMe {
     public static void main(String[] args) {
-        String name = "Kusal Gunasekara";
+        String name = "Pamudu Mihiranga";
         String role = "Software Engineer";
 
         Map<String, List<String>> techStack = Map.of(
