@@ -10,7 +10,6 @@ const AboutMe = () => {
   const name = "Pamudu Mihiranga";
   const role = "Software Engineer";
   const tagline = "Turning coffee into code since 2022";
-
   const techStack = {
     "IDE": ["IntelliJ IDEA", "VS Code", "WebStorm", "Rider"],
     "App Development": ["Java", "Python", "C#"],
@@ -19,32 +18,14 @@ const AboutMe = () => {
     "Tools": ["GitHub", "Git", "Firebase", "AWS", "Postman", "Stack Overflow"]
   };
 
-  const socialLinks = [
-    { name: "GitHub", url: "https://github.com/yourusername"},
-    { name: "LinkedIn", url: "https://linkedin.com/in/yourusername"},
-    { name: "Portfolio", url: "https://yourportfolio.com"},
-    { name: "Twitter", url: "https://twitter.com/yourusername"}
-  ];
-
-  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
-      }
-    }
+    visible: { opacity: 1, transition: { staggerChildren: 0.2, delayChildren: 0.3 } }
   };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { type: "spring", stiffness: 100 }
-    }
+    visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 100 } }
   };
 
   return (
@@ -54,21 +35,20 @@ const AboutMe = () => {
       variants={containerVariants}
       className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl shadow-2xl mt-10 border border-opacity-10 border-white overflow-hidden relative"
     >
-      {/* Decorative elements */}
       <div className="absolute -top-10 -right-10 w-32 h-32 bg-blue-200 rounded-full opacity-20 blur-xl"></div>
       <div className="absolute -bottom-5 -left-5 w-40 h-40 bg-purple-200 rounded-full opacity-20 blur-xl"></div>
 
       <motion.div variants={itemVariants}>
         <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-           Hello, I'm {name}
+          Hello, I'm {name}
         </h1>
         <h2 className="text-2xl text-gray-700 mt-2 font-medium">{role}</h2>
         <p className="text-gray-500 italic mt-1">{tagline}</p>
       </motion.div>
 
       <div className="mt-8">
-        <motion.h3 variants={itemVariants} className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-          <span className="mr-2"></span> My Toolbox
+        <motion.h3 variants={itemVariants} className="text-2xl font-bold text-gray-800 mb-4">
+          My Toolbox
         </motion.h3>
 
         <motion.ul variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -91,6 +71,7 @@ const AboutMe = () => {
           ))}
         </motion.ul>
       </div>
+    </motion.div>
   );
 };
 
