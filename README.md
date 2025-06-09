@@ -55,8 +55,3 @@ public class AboutMe {
   <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="icon" width="50" height="50" />
 </div>
 
-
-## <img src="https://github.com/SP-XD/SP-XD/blob/main/images/message.gif" width="50"/> Let's Connect
-<div align="center">
-    <p> Open to working on challenging projects, sharing ideas, and contributing to the latest advancements in software development. Let’s connect and create impactful solutions together!<br><br>
-</div>
