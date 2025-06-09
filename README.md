@@ -25,18 +25,17 @@ public class AboutMe {
             "Tools", List.of("GitHub", "Git", "Firebase", "AWS", "Postman", "Stack Overflow")
         );
 
-        System.out.println("👋 Hello, I'm " + name + " - " + role + "!");
-        System.out.println("\n🛠️ Tech Stack:");
+        System.out.println(" Hello, I'm " + name + " - " + role + "!");
+        System.out.println("\n Tech Stack:");
 
         techStack.forEach((category, tools) -> {
             String toolsList = tools.stream().collect(Collectors.joining(", "));
             System.out.println("- " + category + ": " + toolsList);
         });
 
-        System.out.println("\n🌟 Always learning, exploring, and building cool stuff!");
+        System.out.println("\n Always learning, exploring, and building cool stuff!");
     }
 }
-
 ```
 <div align="center">
     <p>
