@@ -3,39 +3,98 @@
 </h1>
 
 ```
-/**
- * AboutMe.java
- * A glimpse into my tech journey and passion.
- */
+import React from "react";
+import { motion } from "framer-motion";
 
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
+const AboutMe = () => {
+  const name = "Pamudu Mihiranga";
+  const role = "Software Engineer";
+  const tagline = "Turning coffee into code since 2022";
 
-public class AboutMe {
-    public static void main(String[] args) {
-        String name = "Pamudu Mihiranga";
-        String role = "Software Engineer";
+  const techStack = {
+    "IDE": ["IntelliJ IDEA", "VS Code", "WebStorm", "Rider"],
+    "App Development": ["Java", "Python", "C#"],
+    "Frontend": ["HTML", "CSS", "JavaScript", "React", "Bootstrap", "Tailwind", "jQuery", "Axios"],
+    "Backend": ["Hibernate", "MySQL", "Spring", ".NET"],
+    "Tools": ["GitHub", "Git", "Firebase", "AWS", "Postman", "Stack Overflow"]
+  };
 
-        Map<String, List<String>> techStack = Map.of(
-            "IDE", List.of("IntelliJ IDEA", "VS Code", "WebStorm", "Rider"),
-            "App Development", List.of("Java", "Python", "C#"),
-            "Frontend", List.of("HTML", "CSS", "JavaScript", "React", "Bootstrap", "Tailwind", "jQuery", "Axios"),
-            "Backend", List.of("Hibernate", "MySQL", "Spring", ".NET"),
-            "Tools", List.of("GitHub", "Git", "Firebase", "AWS", "Postman", "Stack Overflow")
-        );
+  const socialLinks = [
+    { name: "GitHub", url: "https://github.com/yourusername"},
+    { name: "LinkedIn", url: "https://linkedin.com/in/yourusername"},
+    { name: "Portfolio", url: "https://yourportfolio.com"},
+    { name: "Twitter", url: "https://twitter.com/yourusername"}
+  ];
 
-        System.out.println(" Hello, I'm " + name + " - " + role + "!");
-        System.out.println("\n Tech Stack:");
-
-        techStack.forEach((category, tools) -> {
-            String toolsList = tools.stream().collect(Collectors.joining(", "));
-            System.out.println("- " + category + ": " + toolsList);
-        });
-
-        System.out.println("\n Always learning, exploring, and building cool stuff!");
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
+      }
     }
-}
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { type: "spring", stiffness: 100 }
+    }
+  };
+
+  return (
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+      className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl shadow-2xl mt-10 border border-opacity-10 border-white overflow-hidden relative"
+    >
+      {/* Decorative elements */}
+      <div className="absolute -top-10 -right-10 w-32 h-32 bg-blue-200 rounded-full opacity-20 blur-xl"></div>
+      <div className="absolute -bottom-5 -left-5 w-40 h-40 bg-purple-200 rounded-full opacity-20 blur-xl"></div>
+
+      <motion.div variants={itemVariants}>
+        <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+           Hello, I'm {name}
+        </h1>
+        <h2 className="text-2xl text-gray-700 mt-2 font-medium">{role}</h2>
+        <p className="text-gray-500 italic mt-1">{tagline}</p>
+      </motion.div>
+
+      <div className="mt-8">
+        <motion.h3 variants={itemVariants} className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+          <span className="mr-2"></span> My Toolbox
+        </motion.h3>
+
+        <motion.ul variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(techStack).map(([category, tools]) => (
+            <motion.li
+              key={category}
+              variants={itemVariants}
+              whileHover={{ scale: 1.03 }}
+              className="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all"
+            >
+              <span className="font-bold text-lg">{category}</span>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {tools.map(tool => (
+                  <span key={tool} className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </motion.li>
+          ))}
+        </motion.ul>
+      </div>
+  );
+};
+
+export default AboutMe;
 ```
 <div align="center">
   <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="icon" width="65" height="50"/>
