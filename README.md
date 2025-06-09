@@ -38,9 +38,21 @@ public class AboutMe {
 }
 ```
 <div align="center">
-    <p>
-  <img src="https://skillicons.dev/icons?i=java,py,cpp,cs,spring,net,nodejs,nestjs,expressjs,html,css,js,ts,react,bootstrap,tailwindcss,figma,jquery,hibernate,regex,mysql,mongodb,postman,flask,prisma,idea,webstorm,rider,vscode,github,git,maven,npm,yarn,vite,gradle,discord,stackoverflow,firebase,notion" alt="Tech Stack" />
-</p>
+  <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="icon" width="65" height="50"/>
+  <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="icon" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="icon" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon"width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/redux-icon.svg" alt="icon" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="icon" width="50" height="50"/> 
+  <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="icon" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="icon" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="icon" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/graphql-icon.svg" alt="icon" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/django-icon.svg" alt="icon" width="50" height="50" />
+  <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="icon" width="50" height="50" />
 </div>
 
 
